@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Luckiest+Guy&family=Montserrat:wght@300;400&display=swap");
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+   width: 100vw;
+   scroll-behavior: smooth;
+   background-color: rgb(245, 245, 245);
+   overflow-x: hidden;
+}
+
+body {
+   position: relative;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+/*========= NAVBAR ========*/
+
+nav {
+   width: 100%;
+   padding: 1rem 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   box-shadow: 0px 7px 10px rgba(0,0,0,0.1);
+   z-index: 999;
+}
+
+nav .brand {
+   font-size: 2rem;
+   font-family: 'Luckiest Guy', cursive;
+}
+
+nav button {
+   outline: none;
+   border: none;
+   padding: 0.7rem 1.5rem;
+   background-color: rgb(0, 132, 255);
+   color: rgba(255, 255, 255, 0.877);
+   border-radius: 5px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   font-family: 'Lato', sans-serif;
+   font-weight: bold;
+}
+
+nav button:hover {
+   background-color: rgb(0, 107, 207);
+   color: #fff;
+}
+
+/* =========== container =============*/
+
+.container {
+   margin: 0 auto;
+   padding: 2rem 20vw;
+   width: 95vw;
+   min-height: 80vh;
+   margin-top: 2rem;
+   border-radius: 2rem;
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.container h1 {
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+   color: rgb(184, 184, 184);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.cards {
+   min-width: 200px;
+   margin: 10px;
+   padding: 2rem 2rem;
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   border-radius: 10px;
+   font-family: sans-serif;
+   background-color: rgb(245, 245, 245);
+   color: rgba(0,0,0,0.7);
+   box-shadow: 10px 10px 15px rgba(0,0,0,0.1), -10px -10px 15px #fff; 
+   z-index: 999;
+}
+
+.cards img {
+   margin: 0 auto;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+   margin-bottom: 20px;
+}
+
+.cards h2 {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+
+.cards h2 i {
+   margin-right: 10px;
+}
+
+.cards h2 span {
+   font-size: 1rem;
+}
+
+.cards p {
+   font-family: sans-serif;
+   font-size: 0.8rem;
+}
+
+.cards p a {
+   display: inline-block;
+   transition: all 0.2s linear;
+}
+
+.cards p a:hover {
+   transform: scale(1.05);
+}
+
+.cards p i {
+   font-size: 1.3rem;
+   margin-right: 10px;
+}
+
+/*========== SHAPES ==========*/
+
+.circle {
+   position: fixed;
+   top: 100px;
+   left: 10px;
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   border: 1px solid rgb(245, 245, 245);
+   box-shadow: 10px 10px 15px rgba(0,0,0,0.1), -10px -10px 15px #fff; 
+}
+
+.triangle {
+   position: fixed;
+   top: 150px;
+   right: 15px;
+   width: 200px;
+   height: 200px;
+   border-radius: 30% 70% 70% 30% / 0% 30% 70% 100% ;
+   transform: rotate(30deg);
+   background-color: rgb(245, 245, 245);
+   border: 1px solid rgb(245, 245, 245);
+   box-shadow: 10px 10px 15px rgba(0,0,0,0.1), -10px -10px 15px #fff; 
+}
+
+.circle2 {
+   position: fixed;
+   bottom: 100px;
+   left: 10px;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 1px solid rgb(245, 245, 245);
+   box-shadow: 10px 10px 15px rgba(0,0,0,0.1), -10px -10px 15px #fff; 
+}
+
+.triangle2 {
+   position: fixed;
+   bottom: 150px;
+   right: 70px;
+   width: 100px;
+   height: 100px;
+   border-radius: 30% 70% 70% 30% / 0% 30% 70% 100% ;
+   background-color: rgb(245, 245, 245);
+   border: 1px solid rgb(245, 245, 245);
+   box-shadow: 10px 10px 15px rgba(0,0,0,0.1), -10px -10px 15px #fff; 
+}
+
+@media screen and (max-width: 500px) {
+   .container {
+      padding: 2rem 1rem;
+   }
+}
